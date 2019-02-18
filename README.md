@@ -1,5 +1,7 @@
 # Solid-RDF-HexBin-File-Extraction
 An HTML page that allows sign-in to a Solid POD and extracts a HexBin file from an RDF file there.
+A working copy can be found here:
+https://formrouter.solid.community/public/FileExtraction/
 
 This was based off of (for the Auth and RDF Lib):
 https://github.com/solid/profile-viewer-tutorial
