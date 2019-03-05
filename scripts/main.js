@@ -92,7 +92,7 @@ $('#getSelectedFile').click(function saveFileOut() {
 
 function downloadBinaryFile(filename, hexContent) {
     var pom = document.createElement('a');
-    var binContent = btoa(String.fromCharCode.apply(null, hexContent.match(/\w{2}/g).map(function (a) { return parseInt(a, 16) })));
+    var binContent = btoa(hexContent.match(/\w{2}/g).map(function(a) { return String.fromCharCode(parseInt(a, 16)); }).join(''));
     pom.setAttribute('href', 'data:application\/octet-stream;base64,' + binContent);
     pom.setAttribute('download', filename);
 
